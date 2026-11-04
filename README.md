@@ -1,114 +1,116 @@
+
 # Hate Speech Detection Web Application
 
-A full-stack Machine Learning web application that identifies whether a given text contains Hate Speech, Offensive Language, or No Hate content.
+A full-stack Machine Learning web application that detects and classifies text into **Hate Speech, Offensive Language, or No Hate** using Natural Language Processing (NLP) techniques.
 
-The system integrates a trained ML model with a Flask backend and a web-based frontend interface.
+The application integrates a trained Machine Learning model with a Flask backend and an interactive frontend, providing instant text classification through a web interface.
 
-This project is built and deployed as a complete web application on the Render cloud platform.
+## 🚀 Live Demo
 
----
+**Live Application:** [Open Web Application](https://hate-speech-flask-app.onrender.com/)
 
-## Project Overview
+## 📌 Project Overview
 
-The Hate Speech Detection Web Application allows users to enter any text and receive an instant classification result.  
-It uses Natural Language Processing techniques with TF-IDF vectorization and a trained machine learning classifier.
+The Hate Speech Detection Web Application allows users to enter text and receive an instant classification result.
 
-The web application consists of:
+It uses TF-IDF vectorization for text feature extraction and a trained Scikit-learn classifier to identify harmful or offensive language.
 
-- Backend server built with Flask  
-- Machine Learning model trained using Scikit-learn  
-- Frontend interface developed with HTML, CSS, and JavaScript  
+The application includes:
+- Flask-based backend API.
+- Machine Learning model for text classification.
+- Interactive frontend built with HTML, CSS, and JavaScript.
+- Cloud deployment using Render.
 
----
+## 📂 Project Structure
 
-## Folder Structure
+```text
 hate-speech-flask-app/
 │
 └── Backend/
-│
-├── app.py
-├── hate_model.pkl
-├── tfidf_vectorizer.pkl
-├── requirements.txt
-├── Procfile
-├── runtime.txt
-├── .python-version
-│
-└── frontend/
-├── index.html
-├── style.css
-└── script.js
+    ├── app.py
+    ├── hate_model.pkl
+    ├── tfidf_vectorizer.pkl
+    ├── requirements.txt
+    ├── Procfile
+    ├── runtime.txt
+    ├── .python-version
+    │
+    └── frontend/
+        ├── index.html
+        ├── style.css
+        └── script.js
+```
 
-## Technologies Used
+## 🛠️ Technologies Used
 
-- Python 3.10  
-- Flask  
-- Flask-CORS  
-- Scikit-learn  
-- NLTK  
-- Joblib  
-- HTML  
-- CSS  
-- JavaScript  
-- GitHub  
-- Render Cloud Platform  
+| Category | Technologies |
+|---|---|
+| Programming Language | Python 3.10 |
+| Backend | Flask, Flask-CORS |
+| Machine Learning | Scikit-learn |
+| NLP | NLTK, TF-IDF |
+| Model Serialization | Joblib |
+| Frontend | HTML, CSS, JavaScript |
+| Deployment | Render |
+| Version Control | GitHub |
 
----
+## 🧠 Machine Learning Implementation
 
-## Machine Learning Implementation
+The application uses Natural Language Processing and supervised Machine Learning techniques.
 
-The application uses:
+- **TF-IDF Vectorization:** Converts text data into numerical features for model prediction.
+- **Text Classification:** A trained Scikit-learn classifier predicts the category of the input text.
+- **Joblib:** Saves and loads the trained model and TF-IDF vectorizer.
 
-- TF-IDF Vectorizer for feature extraction  
-- Supervised machine learning classifier for text classification  
+## ✨ Key Features
 
-The trained model and vectorizer are saved and loaded using Joblib.
+- Real-time text classification.
+- Detection of hate speech and offensive language.
+- Three-category prediction system.
+- Simple and interactive user interface.
+- Flask REST API integration.
+- Cloud-hosted web application.
 
----
+## 🔄 Application Workflow
 
-## Build and Deployment
+1. User enters text through the frontend.
+2. Frontend sends the input to the Flask backend.
+3. Text is processed using the TF-IDF vectorizer.
+4. The trained ML model predicts the text category.
+5. The prediction is returned and displayed on the frontend.
 
-The project is:
+**Workflow:**
 
-- Version controlled using GitHub  
-- Built and hosted on Render  
+`User Input → Frontend → Flask API → TF-IDF → ML Model → Prediction Result`
 
-Deployment includes:
+## ☁️ Build and Deployment
 
-- Gunicorn production server  
-- Python runtime configuration  
-- Automated cloud builds  
+The application is deployed on the Render cloud platform.
 
----
+Deployment configuration includes:
+- Gunicorn production server.
+- Python runtime configuration.
+- Requirements-based dependency installation.
+- GitHub-based source code management.
+- Automated cloud builds.
 
-## Application Workflow
+## 📊 Project Outcome
 
-User input →  
-Frontend interface →  
-Flask API →  
-Machine Learning model →  
-Prediction result displayed.
+Developed and deployed a full-stack Machine Learning application capable of classifying user-provided text into three categories:
 
----
+- **No Hate**
+- **Offensive Language**
+- **Hate Speech**
 
-## Project Outcome
+The application provides an accessible web interface for automated text classification.
 
-The deployed system successfully classifies text into:
+## 🔮 Future Enhancements
 
-- No Hate  
-- Offensive  
-- Hate  
+- Improve classification performance.
+- Support multilingual hate speech detection.
+- Experiment with advanced NLP and deep learning models.
+- Enhance model evaluation and prediction confidence.
 
-Providing fast and accurate results through a web-based interface.
+## 📄 License
 
----
-
-## Author
-
-Hasith Darla  
-
----
-
-## License
-
-This project is created for educational and demonstration purposes.
+This project is developed for educational and demonstration purposes.
